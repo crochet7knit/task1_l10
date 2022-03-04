@@ -1,0 +1,61 @@
+###
+GET http://localhost:8080/hotel
+
+###
+GET http://localhost:8080/hotel/1
+
+###
+POST http://localhost:8080/hotel
+Content-Type: application/json
+
+{
+  "name": "YulDUZ"
+}
+
+###
+PUT http://localhost:8080/hotel/1
+Content-Type: application/json
+
+{
+  "name": "DEDEMAN"
+}
+
+###
+DELETE http://localhost:8080/hotel/2
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
+###
+GET http://localhost:8080/room
+
+###
+GET http://localhost:8080/room/1
+
+###
+GET http://localhost:8080/room/byHotelId/1
+
+###
+POST http://localhost:8080/room
+Content-Type: application/json
+
+{
+  "number": 33,
+  "floor": 6,
+  "size": 1,
+  "hotelId": 2
+}
+
+###
+PUT http://localhost:8080/room/2
+Content-Type: application/json
+
+{
+  "number": 399,
+  "floor": 1,
+  "size": 10,
+  "hotelId": 1
+}
+
+###
+DELETE http://localhost:8080/room/2
